@@ -9,21 +9,21 @@ Click the **“Open in Colab”** button to launch each notebook directly in Goo
 
 ## Notebooks
 
-### '01 - Import STATS19 Dataset, Merge & Save.ipynb'
+### 01 - Import STATS19 Dataset, Merge & Save
 We download the STATS19 datasets, merge them in chunks, clean up and save to use in the following notebooks.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KhushiSharma0/STATS19_route_risk_analysis/blob/main/notebooks/01%20-%20Import%20STATS19%20Dataset%2C%20Merge%20%26%20Save.ipynb)
 
-### `02 - Explore Dataset, Clean & Missing Values.ipynb` 
+### 02 - Explore Dataset, Clean & Missing Values.ipynb
 description
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/yourrepo/blob/main/notebook2.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KhushiSharma0/STATS19_route_risk_analysis/blob/main/notebooks/03%20-%20Feature%20Engineering.ipynb)
 
 
 ### `03 - Feature Engineering.ipynb`
 In progress
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/yourrepo/blob/main/notebook3.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KhushiSharma0/STATS19_route_risk_analysis/blob/main/notebooks/02%20-%20Explore%20Dataset%2C%20Clean%20up%20%26%20Missing%20Values.ipynb)
 
 
 ## How to use
