@@ -17,13 +17,14 @@ We download the STATS19 datasets, merge them in chunks, clean up and save to use
 ### 02 - Explore Dataset, Clean & Missing Values.ipynb
 description
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KhushiSharma0/STATS19_route_risk_analysis/blob/main/notebooks/03%20-%20Feature%20Engineering.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KhushiSharma0/STATS19_route_risk_analysis/blob/main/notebooks/02%20-%20Explore%20Dataset%2C%20Clean%20up%20%26%20Missing%20Values.ipynb)
+
 
 
 ### `03 - Feature Engineering.ipynb`
 In progress
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KhushiSharma0/STATS19_route_risk_analysis/blob/main/notebooks/02%20-%20Explore%20Dataset%2C%20Clean%20up%20%26%20Missing%20Values.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KhushiSharma0/STATS19_route_risk_analysis/blob/main/notebooks/03%20-%20Feature%20Engineering.ipynb)
 
 
 ## How to use
