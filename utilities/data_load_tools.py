@@ -191,6 +191,7 @@ def build_school_name_map(folder_names, formatter=None):
     
     return {name.lower(): formatter(name) for name in folder_names}
 
+# outdated
 def read_routes_data(base_path, output_dir, file_name="all_routes_collisions", name_map=None, save_format="csv"):
     """
     Reads all .gpkg route files from nested school folders under each borough/level/merged_data path.
@@ -323,3 +324,67 @@ def list_school_folders(base_path, output_txt=None):
 
     return school_folders
 
+def combine_route_files(base_dir, output_dir, output_filename="all_routes_combined", save_format="csv"):
+    """
+    Combines all .gpkg route files from nested folders into a single dataset.
+    Adds 'school_name' and 'borough' columns from folder names.
+
+    Parameters
+    ----------
+    base_dir : str or Path
+        Root folder containing borough folders → school folders → .gpkg files
+    output_dir : str or Path
+        Where to save the combined output
+    output_filename : str
+        Base filename for output file (no extension)
+    save_format : str
+        'csv' (drops geometry) or 'gpkg' (keep geometry)
+
+    Saves
+    -----
+    output_dir/output_filename.gpkg or output_dir/output_filename.csv
+    """
+    base_dir = Path(base_dir)
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    all_data = []
+
+    for merged_data_dir in base_dir.rglob("merged data"):
+        for gpkg_file in merged_data_dir.glob("*/**/*.gpkg"):
+            try:
+                gdf = gpd.read_file(gpkg_file)
+
+                # extract school + borough from parent folder names
+                school_name = gpkg_file.parent.name.replace("_", " ").title()
+                borough = gpkg_file.parents[3].name.title() if len(gpkg_file.parents) >= 4 else "Unknown"
+
+                gdf["school_name"] = school_name
+                gdf["borough"] = borough
+
+                all_data.append(gdf)
+
+                print(f"\r✅ Loaded: {school_name} ({borough}) | {len(all_data)} files total{' '*20}", end="", flush=True)
+            
+            except Exception as e:
+                print(f"⚠️ Failed to read {gpkg_file}: {e}")
+
+    if not all_data:
+        print("⚠️ No valid files found.")
+        return None
+
+    combined = gpd.GeoDataFrame(pd.concat(all_data, ignore_index=True))
+    print(f"\n📊 Combined {len(all_data)} files → {len(combined)} total rows")
+
+    filename = output_dir / output_filename
+
+    if save_format.lower() == "gpkg":
+        combined.to_file(f"{filename}.gpkg", driver="GPKG")
+        print(f"💾 Saved GeoPackage: {filename}.gpkg")
+    elif save_format.lower() == "csv":
+        combined.drop(columns="geometry").to_csv(f"{filename}.csv", index=False)
+        print(f"💾 Saved CSV (geometry dropped): {filename}.csv")
+    else:
+        print(f"❌ Unknown save_format '{save_format}'. No file saved.")
+
+    return combined
