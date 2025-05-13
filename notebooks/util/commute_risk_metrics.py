@@ -26,9 +26,8 @@ def build_commute_risk_metrics(df, filter_col=None, filter_values=None):
     # Columns needed for metrics
     cols_needed = [
         "route_id", "school_name", "borough", "length_km",
-        "accident_index", "number_of_casualties",
-        "casualty_reference", "casualty_severity"
-    ]
+        "accident_index", "number_of_casualties", "casualty_reference"      
+    ] #  "casualty_severity"
     df_metrics = df[cols_needed].copy()
     # Drop join duplicates
     df_metrics = df_metrics.drop_duplicates(subset=["route_id", "accident_index", "casualty_reference"])
@@ -49,25 +48,25 @@ def build_commute_risk_metrics(df, filter_col=None, filter_values=None):
         .sum()
         .reset_index(name="casualty_count")
     )
-    # Severity
-    avg_severity = (
-        df_metrics
-        .groupby("route_id")["casualty_severity"]
-        .mean()
-        .reset_index(name="avg_casualty_severity")
-    )
-    # Serious + fatal
-    serious_fatal = (
-        df_metrics[df_metrics["casualty_severity"].isin([1, 2])]
-        .groupby("route_id")
-        .size()
-        .reset_index(name="serious_fatal_casualty_count")
-    )
+    # # Severity
+    # avg_severity = (
+    #     df_metrics
+    #     .groupby("route_id")["casualty_severity"]
+    #     .mean()
+    #     .reset_index(name="avg_casualty_severity")
+    # )
+    # # Serious + fatal
+    # serious_fatal = (
+    #     df_metrics[df_metrics["casualty_severity"].isin([1, 2])]
+    #     .groupby("route_id")
+    #     .size()
+    #     .reset_index(name="serious_fatal_casualty_count")
+    # )
     # Merge everything
     result = base
-    for table in [collisions, casualties, avg_severity, serious_fatal]:
+    for table in [collisions, casualties]: #  avg_severity, serious_fatal
         result = result.merge(table, on="route_id", how="left")
-    result["serious_fatal_casualty_count"] = result["serious_fatal_casualty_count"].fillna(0).astype(int)
+    # result["serious_fatal_casualty_count"] = result["serious_fatal_casualty_count"].fillna(0).astype(int)
     return result
 
 
@@ -96,29 +95,29 @@ def add_normalised_metrics(table, metric_cols, length_col="length_km"):
 
     return table
 
-def add_percentile_metrics(table, columns, inplace=False):
-    """
-    Adds percentile ranks (0 to 1) for selected columns, and optionally a composite percentile score and rank.
+# def add_percentile_metrics(table, columns, inplace=False):
+#     """
+#     Adds percentile ranks (0 to 1) for selected columns, and optionally a composite percentile score and rank.
 
-    Parameters:
-    - table (pd.DataFrame): The base metrics table.
-    - columns (list of str): List of metric column names (e.g., collisions_per_km).
-    - add_composite (bool): Whether to compute a composite percentile from the individual ones.
-    - prefix (str): Prefix for the composite columns (e.g., 'risk' → 'risk_score', 'risk_percentile').
-    - inplace (bool): Whether to modify the original table in-place.
+#     Parameters:
+#     - table (pd.DataFrame): The base metrics table.
+#     - columns (list of str): List of metric column names (e.g., collisions_per_km).
+#     - add_composite (bool): Whether to compute a composite percentile from the individual ones.
+#     - prefix (str): Prefix for the composite columns (e.g., 'risk' → 'risk_score', 'risk_percentile').
+#     - inplace (bool): Whether to modify the original table in-place.
 
-    Returns:
-    - pd.DataFrame: The modified table with _percentile columns and optional composite.
-    """
-    if not inplace:
-        table = table.copy()
+#     Returns:
+#     - pd.DataFrame: The modified table with _percentile columns and optional composite.
+#     """
+#     if not inplace:
+#         table = table.copy()
 
-    # Add individual percentile columns
-    for col in columns:
-        p_col = f"{col}_percentile"
-        if p_col not in table.columns:
-            table[p_col] = table[col].rank(pct=True)
-    return table
+#     # Add individual percentile columns
+#     for col in columns:
+#         p_col = f"{col}_percentile"
+#         if p_col not in table.columns:
+#             table[p_col] = table[col].rank(pct=True)
+#     return table
 
 
 def add_poisson_risk_metrics(table, count_metrics, length_col="length_km", prefix="poisson"):
@@ -126,7 +125,6 @@ def add_poisson_risk_metrics(table, count_metrics, length_col="length_km", prefi
     Adds Poisson-based per-km risk metrics for each count metric.
 
     For each metric, this adds:
-    - <prefix>_expected_per_km_<metric>
     - <prefix>_risk_ratio_<metric>
     - <prefix>_excess_per_km_<metric>
 
@@ -155,40 +153,31 @@ def add_poisson_risk_metrics(table, count_metrics, length_col="length_km", prefi
         expected = model.predict()
 
         # Add per-km metrics
-        table[f"{prefix}_expected_per_km_{metric}"] = expected / table[length_col]
         table[f"{prefix}_risk_ratio_{metric}"] = table[metric] / expected
         table[f"{prefix}_excess_per_km_{metric}"] = (table[metric] - expected) / table[length_col]
 
     return table.drop(columns="log_length")
 
 
-def add_composite_percentile(table, source_cols, prefix="composite", weights=None, inplace=False):
+def calculate_composite_risk_score(df, scaled_metrics, weights=None, score_col="composite_risk_score"):
     """
-    Adds only the composite percentile column from selected percentile columns (no intermediate score).
+    Calculates a composite risk score using scaled metrics (0–1).
 
     Parameters:
-    - table (pd.DataFrame): DataFrame with *_percentile columns.
-    - source_cols (list of str): List of percentile columns to combine.
-    - prefix (str): Prefix for the output column (e.g., 'meta' → 'meta_percentile').
-    - weights (list of float or None): Optional weights to apply to each column.
-    - inplace (bool): Whether to modify the table in place.
+    - df: DataFrame containing scaled metrics
+    - scaled_metrics: list of column names (e.g., ["collision_count_per_km_scaled", ...])
+    - weights: list or array of same length as scaled_metrics, or None for equal weighting
+    - score_col: name of output column
 
     Returns:
-    - pd.DataFrame: Table with a new '<prefix>_percentile' column.
+    - DataFrame with new score column
     """
-    if not inplace:
-        table = table.copy()
-
     if weights is None:
-        weights = [1.0] * len(source_cols)
-
-    assert len(weights) == len(source_cols), "Weights must match number of columns"
-
-    weighted_sum = sum(table[col] * w for col, w in zip(source_cols, weights))
-    percentile_col = f"{prefix}_percentile"
-    table[percentile_col] = weighted_sum.rank(pct=True)
-
-    return table
+        weights = [1.0] * len(scaled_metrics)
+    
+    weights = np.array(weights) / np.sum(weights)  # normalize weights
+    df[score_col] = df[scaled_metrics].values @ weights  # matrix-style weighted sum
+    return df
 
 
 
