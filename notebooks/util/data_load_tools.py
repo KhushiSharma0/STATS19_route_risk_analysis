@@ -388,3 +388,15 @@ def combine_route_files(base_dir, output_dir, output_filename="all_routes_combin
         print(f"❌ Unknown save_format '{save_format}'. No file saved.")
 
     return combined
+
+# Add validation after merging
+def validate_stats19_relationships(df):
+    # Each casualty should have exactly one accident and one vehicle
+    casualty_counts = df.groupby(['accident_index', 'vehicle_reference', 'casualty_reference']).size()
+    duplicate_casualties = casualty_counts[casualty_counts > 1]
+    
+    if len(duplicate_casualties) > 0:
+        print(f"WARNING: Found {len(duplicate_casualties)} duplicate casualty entries!")
+        
+    return len(duplicate_casualties) == 0
+    

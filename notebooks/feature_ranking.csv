@@ -1,0 +1,14 @@
+Feature,Importance
+pedestrian_crossing_physical_facilities,0.015001864217198213
+speed_limit,0.014673084093143007
+weather_conditions,0.009714266345795286
+junction_detail,0.009117716842354972
+pedestrian_crossing_human_control,0.008578788597769671
+road_surface_conditions,0.008314408704199527
+road_type,0.00802291292410936
+light_conditions,0.004369047215537336
+junction_control,0.003623360336236936
+urban_or_rural_area,0.002769209910856452
+special_conditions_at_site,0.00026099040775506843
+carriageway_hazards,3.728434396496061e-05
+trunk_road_flag,0.0

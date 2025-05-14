@@ -1,0 +1,293 @@
+
+================================================================================
+🏷️  RISK LEVEL: CRITICAL RISK
+================================================================================
+
+
+--- Borough: Barnsley ---
+                                            route_id                                        school_name  borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                         horizon_community_college_8                          Horizon Community College Barnsley      5.541                6               7                1.082837               1.263310                            2.984566
+                        springwell_special_academy_6                         Springwell Special Academy Barnsley      5.679                6               7                1.056524               1.232611                            2.912041
+holy_trinity_catholic_and_church_of_england_school_5 Holy Trinity Catholic And Church Of England School Barnsley      5.750                6               7                1.043478               1.217391                            2.876084
+                         waterton_newstead_academy_6                          Waterton Newstead Academy Barnsley      5.754                6               7                1.042753               1.216545                            2.874084
+                         horizon_community_college_7                          Horizon Community College Barnsley      6.554                6               7                0.915471               1.068050                            2.523265
+                                 barnsley_college_11                                   Barnsley College Barnsley      9.307                5               5                0.537230               0.537230                            1.480739
+                       west_meadows_primary_school_8                        West Meadows Primary School Barnsley     16.241                1               1                0.061573               0.061573                            0.169709
+
+
+--- Borough: Doncaster ---
+                                                            route_id                                                        school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                                         town_field_primary_school_1                                          Town Field Primary School Doncaster      2.723                5               8                1.836210               2.937936                            5.061048
+                                         town_field_primary_school_8                                          Town Field Primary School Doncaster      1.481                3               4                2.025658               2.700878                            5.583214
+                                                     atlas_academy_2                                                      Atlas Academy Doncaster      2.587                4               6                1.546193               2.319289                            4.261688
+                                          woodfield_primary_school_7                                           Woodfield Primary School Doncaster      2.816                4               6                1.420455               2.130682                            3.915123
+                                                     atlas_academy_0                                                      Atlas Academy Doncaster      2.830                4               6                1.413428               2.120141                            3.895755
+                                            mallard_primary_school_5                                             Mallard Primary School Doncaster      2.903                4               6                1.377885               2.066827                            3.797791
+                         st_francis_xavier_catholic_primary_school_7                          St Francis Xavier Catholic Primary School Doncaster      2.814                3               5                1.066098               1.776830                            2.938429
+                                               heatherwood_school_20                                                 Heatherwood School Doncaster      3.432                6               6                1.748252               1.748252                            4.818613
+                                         long_toft_primary_school_11                                           Long Toft Primary School Doncaster      0.572                1               1                1.748252               1.748252                            4.818613
+doncaster_school_for_the_deaf_and_communication_specialist_college_2 Doncaster School For The Deaf And Communication Specialist College Doncaster      5.490                8               9                1.457195               1.639344                            4.016389
+
+
+--- Borough: Rotherham ---
+                            route_id                       school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+          thurcroft_junior_academy_9          Thurcroft Junior Academy Rotherham      1.962                4               4                2.038736               2.038736                            5.619259
+         thurcroft_junior_academy_10          Thurcroft Junior Academy Rotherham      2.436                4               4                1.642036               1.642036                            4.525857
+                     milton_school_6                     Milton School Rotherham      3.106                4               4                1.287830               1.287830                            3.549577
+saint_pius_x_catholic_high_school_14 Saint Pius X Catholic High School Rotherham      4.412                5               5                1.133273               1.133273                            3.123580
+                  swinton_academy_16                   Swinton Academy Rotherham      5.610                6               6                1.069519               1.069519                            2.947857
+         clifton_community_school_20          Clifton Community School Rotherham      5.747                6               6                1.044023               1.044023                            2.877585
+                     aston_academy_3                     Aston Academy Rotherham      5.831                6               6                1.028983               1.028983                            2.836131
+                   kelford_school_10                    Kelford School Rotherham      6.039                6               6                0.993542               0.993542                            2.738447
+
+
+--- Borough: Sheffield ---
+                           route_id                       school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                 bankwood_primary_3                  Bankwood Primary Sheffield      0.404                1               3                2.475248               7.425743                            6.822393
+    woodhouse_west_primary_school_0     Woodhouse West Primary School Sheffield      0.885                3               5                3.389831               5.649718                            9.343209
+    woodhouse_west_primary_school_5     Woodhouse West Primary School Sheffield      0.913                2               4                2.190581               4.381161                            6.037780
+           oasis_academy_fir_vale_0            Oasis Academy Fir Vale Sheffield      0.566                2               2                3.533569               3.533569                            9.739388
+    woodhouse_west_primary_school_1     Woodhouse West Primary School Sheffield      1.393                2               4                1.435750               2.871500                            3.957282
+                 bankwood_primary_0                  Bankwood Primary Sheffield      1.083                1               3                0.923361               2.770083                            2.545011
+wisewood_community_primary_school_1 Wisewood Community Primary School Sheffield      0.733                1               2                1.364256               2.728513                            3.760227
+       meadowhead_school_academy_10         Meadowhead School Academy Sheffield      1.122                3               3                2.673797               2.673797                            7.369644
+           parkwood_e-act_academy_6            Parkwood E-Act Academy Sheffield      2.310                4               6                1.731602               2.597403                            4.772722
+               the_birley_academy_3                The Birley Academy Sheffield      1.596                4               4                2.506266               2.506266                            6.907886
+
+
+================================================================================
+🏷️  RISK LEVEL: HIGH RISK
+================================================================================
+
+
+--- Borough: Barnsley ---
+                         route_id                    school_name  borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+             all_saints_academy_1             All Saints Academy Barnsley      3.354                4               4                1.192606               1.192606                            3.287116
+               barnsley_college_8               Barnsley College Barnsley      5.530                4               5                0.723327               0.904159                            1.993669
+     springwell_special_academy_5     Springwell Special Academy Barnsley      5.712                4               5                0.700280               0.875350                            1.930145
+springwell_alternative_academy_16 Springwell Alternative Academy Barnsley      5.765                5               5                0.867303               0.867303                            2.390500
+              barnsley_college_15               Barnsley College Barnsley      4.616                4               4                0.866551               0.866551                            2.388429
+      waterton_newstead_academy_5      Waterton Newstead Academy Barnsley      5.929                5               5                0.843313               0.843313                            2.324377
+     trinity_academy_st_edwards_9     Trinity Academy St Edwards Barnsley      5.674                4               4                0.704970               0.704970                            1.943071
+        outwood_academy_shafton_3        Outwood Academy Shafton Barnsley      5.684                4               4                0.703730               0.703730                            1.939653
+              barnsley_college_17               Barnsley College Barnsley      5.810                4               4                0.688468               0.688468                            1.897588
+              greenacre_school_10               Greenacre School Barnsley      5.843                4               4                0.684580               0.684580                            1.886871
+
+
+--- Borough: Doncaster ---
+                                                             route_id                                                        school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                                          town_field_primary_school_9                                          Town Field Primary School Doncaster      2.580                3               4                1.162791               1.550388                            3.204938
+                                          town_field_primary_school_0                                          Town Field Primary School Doncaster      2.646                3               4                1.133787               1.511716                            3.124996
+                                             outwood_academy_danum_22                                              Outwood Academy Danum Doncaster      3.417                4               4                1.170618               1.170618                            3.226511
+doncaster_school_for_the_deaf_and_communication_specialist_college_11 Doncaster School For The Deaf And Communication Specialist College Doncaster      5.468                5               6                0.914411               1.097293                            2.520343
+                                          astrea_academy_woodfields_1                                          Astrea Academy Woodfields Doncaster      5.528                3               6                0.542692               1.085384                            1.495792
+                                         astrea_academy_woodfields_18                                          Astrea Academy Woodfields Doncaster      5.601                2               6                0.357079               1.071237                            0.984198
+                                          astrea_academy_woodfields_0                                          Astrea Academy Woodfields Doncaster      5.637                2               6                0.354799               1.064396                            0.977913
+                                        sir_thomas_wharton_academy_17                                         Sir Thomas Wharton Academy Doncaster      5.672                4               6                0.705219               1.057828                            1.943757
+                                                                utc_3                                                                Utc Doncaster      5.756                5               6                0.868659               1.042391                            2.394238
+doncaster_school_for_the_deaf_and_communication_specialist_college_12 Doncaster School For The Deaf And Communication Specialist College Doncaster      3.868                4               4                1.034126               1.034126                            2.850307
+
+
+--- Borough: Rotherham ---
+                    route_id               school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+           kelford_school_16            Kelford School Rotherham      3.690                4               4                1.084011               1.084011                            2.987801
+             aston_academy_7             Aston Academy Rotherham      5.726                5               6                0.873210               1.047852                            2.406782
+wath_comprehensive_school_12 Wath Comprehensive School Rotherham      4.811                5               5                1.039285               1.039285                            2.864526
+        wales_high_school_19         Wales High School Rotherham      5.934                5               6                0.842602               1.011122                            2.322419
+             aston_academy_8             Aston Academy Rotherham      6.222                5               6                0.803600               0.964320                            2.214920
+             aston_academy_9             Aston Academy Rotherham      4.206                4               4                0.951022               0.951022                            2.621252
+      oakwood_high_school_15       Oakwood High School Rotherham      5.436                5               5                0.919794               0.919794                            2.535179
+             milton_school_7             Milton School Rotherham      4.382                4               4                0.912825               0.912825                            2.515971
+             aston_academy_2             Aston Academy Rotherham      5.587                5               5                0.894935               0.894935                            2.466661
+  clifton_community_school_1  Clifton Community School Rotherham      5.616                5               5                0.890313               0.890313                            2.453923
+
+
+--- Borough: Sheffield ---
+                         route_id                    school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+ king_edward_vii_-_lower_school_8 King Edward Vii - Lower School Sheffield      2.626                3               4                1.142422               1.523229                            3.148797
+king_edward_vii_-_lower_school_24 King Edward Vii - Lower School Sheffield      3.370                3               4                0.890208               1.186944                            2.453632
+                  mercia_school_9                  Mercia School Sheffield      6.088                4               4                0.657030               0.657030                            1.810937
+
+
+================================================================================
+🏷️  RISK LEVEL: MODERATE RISK
+================================================================================
+
+
+--- Borough: Barnsley ---
+                                   route_id                               school_name  borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                meadstead_primary_academy_7                 Meadstead Primary Academy Barnsley      1.566                2               2                1.277139               1.277139                            3.520111
+                 ladywood_primary_school_11                   Ladywood Primary School Barnsley      1.645                2               2                1.215805               1.215805                            3.351060
+         outwood_primary_academy_darfield_4          Outwood Primary Academy Darfield Barnsley      2.691                3               3                1.114827               1.114827                            3.072739
+                 parkside_primary_academy_4                  Parkside Primary Academy Barnsley      2.715                3               3                1.104972               1.104972                            3.045576
+               cherry_dale_primary_school_3                Cherry Dale Primary School Barnsley      2.875                2               3                0.695652               1.043478                            1.917389
+             summerfields_primary_academy_3              Summerfields Primary Academy Barnsley      1.069                1               1                0.935454               0.935454                            2.578341
+royston_st_john_baptist_ce_primary_school_3 Royston St John Baptist Ce Primary School Barnsley      3.222                3               3                0.931099               0.931099                            2.566338
+                       all_saints_academy_2                        All Saints Academy Barnsley      3.233                3               3                0.927931               0.927931                            2.557606
+                 ladywood_primary_school_12                   Ladywood Primary School Barnsley      2.263                2               2                0.883783               0.883783                            2.435923
+                 parkside_primary_academy_8                  Parkside Primary Academy Barnsley      1.146                1               1                0.872600               0.872600                            2.405102
+
+
+--- Borough: Doncaster ---
+                                          route_id                                      school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                            norton_junior_school_9                             Norton Junior School Doncaster      1.316                1               2                0.759878               1.519757                            2.094412
+                         carcroft_primary_school_6                          Carcroft Primary School Doncaster      1.353                1               2                0.739098               1.478197                            2.037137
+               scawsby_saltersgate_infant_school_1                Scawsby Saltersgate Infant School Doncaster      1.466                2               2                1.364256               1.364256                            3.760227
+               scawsby_saltersgate_junior_school_1                Scawsby Saltersgate Junior School Doncaster      1.471                2               2                1.359619               1.359619                            3.747446
+the_mcauley_catholic_high_school_-_lower_school_20  The Mcauley Catholic High School - Lower School Doncaster      1.611                1               2                0.620732               1.241465                            1.710892
+our_lady_of_mount_carmel_catholic_primary_school_0 Our Lady Of Mount Carmel Catholic Primary School Doncaster      2.420                3               3                1.239669               1.239669                            3.416835
+                                waverley_academy_2                                 Waverley Academy Doncaster      2.450                3               3                1.224490               1.224490                            3.374996
+                      kingfisher_primary_academy_2                       Kingfisher Primary Academy Doncaster      2.454                3               3                1.222494               1.222494                            3.369495
+                         carcroft_primary_school_1                          Carcroft Primary School Doncaster      1.668                1               2                0.599520               1.199041                            1.652426
+                                waverley_academy_1                                 Waverley Academy Doncaster      2.546                3               3                1.178319               1.178319                            3.247738
+
+
+--- Borough: Rotherham ---
+                                     route_id                                 school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                  wath_cofe_primary_school_10                    Wath Cofe Primary School Rotherham      2.787                1               4                0.358809               1.435235                            0.988965
+                 west_melton_primary_school_0                  West Melton Primary School Rotherham      2.841                1               4                0.351989               1.407955                            0.970168
+     brampton_the_ellis_cofe_primary_school_7      Brampton The Ellis Cofe Primary School Rotherham      2.869                1               4                0.348554               1.394214                            0.960699
+    the_ellis_(brampton)_cofe_junior_school_7     The Ellis (Brampton) Cofe Junior School Rotherham      2.869                1               4                0.348554               1.394214                            0.960699
+                   wath_cofe_primary_school_0                    Wath Cofe Primary School Rotherham      2.873                1               4                0.348068               1.392273                            0.959362
+                 west_melton_primary_school_9                  West Melton Primary School Rotherham      3.357                1               4                0.297885               1.191540                            0.821045
+arnold_nursery_school_and_children's_centre_6 Arnold Nursery School And Children S Centre Rotherham      2.641                3               3                1.135933               1.135933                            3.130913
+  st_mary's_catholic_primary,_herringthorpe_6   St Mary S Catholic Primary, Herringthorpe Rotherham      2.647                3               3                1.133359               1.133359                            3.123816
+        st_gerard's_catholic_primary_school_1         St Gerard S Catholic Primary School Rotherham      2.771                3               3                1.082642               1.082642                            2.984027
+       wickersley_northfield_primary_school_6        Wickersley Northfield Primary School Rotherham      2.782                2               3                0.718907               1.078361                            1.981486
+
+
+--- Borough: Sheffield ---
+                         route_id                     school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+               bankwood_primary_1                Bankwood Primary Sheffield      1.556                1               3                0.642674               1.928021                            1.771367
+     nether_green_infant_school_2      Nether Green Infant School Sheffield      1.784                2               3                1.121076               1.681614                            3.089963
+               bankwood_primary_2                Bankwood Primary Sheffield      1.838                1               3                0.544070               1.632209                            1.499590
+    nether_green_infant_school_11      Nether Green Infant School Sheffield      1.564                1               2                0.639386               1.278772                            1.762306
+            the_birley_academy_10              The Birley Academy Sheffield      1.632                2               2                1.225490               1.225490                            3.377753
+             the_birley_academy_0              The Birley Academy Sheffield      1.652                2               2                1.210654               1.210654                            3.336860
+tinsley_meadows_primary_academy_1 Tinsley Meadows Primary Academy Sheffield      0.871                1               1                1.148106               1.148106                            3.164462
+ arbourthorne_community_primary_3  Arbourthorne Community Primary Sheffield      0.906                1               1                1.103753               1.103753                            3.042215
+     hinde_house_2-16_secondary_5      Hinde House 2-16 Secondary Sheffield      1.814                2               2                1.102536               1.102536                            3.038861
+       gleadless_primary_school_0        Gleadless Primary School Sheffield      0.916                1               1                1.091703               1.091703                            3.009003
+
+
+================================================================================
+🏷️  RISK LEVEL: LOW RISK
+================================================================================
+
+
+--- Borough: Barnsley ---
+                                 route_id                             school_name  borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                birkwood_primary_school_3                 Birkwood Primary School Barnsley      2.383                1               2                0.419639               0.839278                            1.156629
+                birkwood_primary_school_4                 Birkwood Primary School Barnsley      2.591                1               2                0.385951               0.771903                            1.063777
+     worsbrough_bank_end_primary_school_4      Worsbrough Bank End Primary School Barnsley      2.785                1               2                0.359066               0.718133                            0.989676
+               sandhill_primary_school_10                 Sandhill Primary School Barnsley      1.493                1               1                0.669792               0.669792                            1.846113
+                sandhill_primary_school_6                 Sandhill Primary School Barnsley      1.602                1               1                0.624220               0.624220                            1.720504
+              gooseacre_primary_academy_9               Gooseacre Primary Academy Barnsley      1.650                1               1                0.606061               0.606061                            1.670453
+             churchfield_primary_school_3              Churchfield Primary School Barnsley      3.482                1               2                0.287191               0.574383                            0.791570
+          hoyland_common_primary_school_2           Hoyland Common Primary School Barnsley      1.752                1               1                0.570776               0.570776                            1.573200
+elsecar_holy_trinity_ce_primary_academy_2 Elsecar Holy Trinity Ce Primary Academy Barnsley      1.861                1               1                0.537346               0.537346                            1.481057
+             meadstead_primary_academy_11               Meadstead Primary Academy Barnsley      1.863                1               1                0.536769               0.536769                            1.479467
+
+
+--- Borough: Doncaster ---
+                           route_id                       school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+             norton_infant_school_2              Norton Infant School Doncaster      2.249                1               2                0.444642               0.889284                            1.225543
+             norton_infant_school_8              Norton Infant School Doncaster      2.260                1               2                0.442478               0.884956                            1.219578
+            norton_junior_school_11              Norton Junior School Doncaster      2.369                1               2                0.422119               0.844238                            1.163464
+          carcroft_primary_school_5           Carcroft Primary School Doncaster      2.397                1               2                0.417188               0.834376                            1.149873
+          carcroft_primary_school_2           Carcroft Primary School Doncaster      2.449                1               2                0.408330               0.816660                            1.125458
+       owston_park_primary_school_5        Owston Park Primary School Doncaster      2.459                1               2                0.406669               0.813339                            1.120881
+scawsby_saltersgate_infant_school_8 Scawsby Saltersgate Infant School Doncaster      2.488                1               2                0.401929               0.803859                            1.107816
+             norton_infant_school_7              Norton Infant School Doncaster      2.509                1               2                0.398565               0.797130                            1.098544
+             norton_junior_school_8              Norton Junior School Doncaster      2.519                1               2                0.396983               0.793966                            1.094183
+             norton_junior_school_7              Norton Junior School Doncaster      2.587                1               2                0.386548               0.773096                            1.065422
+
+
+--- Borough: Rotherham ---
+                    route_id                school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+   thurcroft_infant_school_4    Thurcroft Infant School Rotherham      1.684                1               1                0.593824               0.593824                            1.636726
+kiveton_park_infant_school_7 Kiveton Park Infant School Rotherham      1.764                1               1                0.566893               0.566893                            1.562498
+   thurcroft_infant_school_3    Thurcroft Infant School Rotherham      1.804                1               1                0.554324               0.554324                            1.527853
+  thrybergh_primary_school_7   Thrybergh Primary School Rotherham      1.924                1               1                0.519751               0.519751                            1.432561
+kiveton_park_infant_school_4 Kiveton Park Infant School Rotherham      1.940                1               1                0.515464               0.515464                            1.420746
+  anston_park_junior_schoo_8   Anston Park Junior Schoo Rotherham      2.002                1               1                0.499500               0.499500                            1.376747
+ springwood_junior_academy_2  Springwood Junior Academy Rotherham      2.093                1               1                0.477783               0.477783                            1.316888
+aston_lodge_primary_school_8 Aston Lodge Primary School Rotherham      2.096                1               1                0.477099               0.477099                            1.315003
+ high_greave_junior_school_4  High Greave Junior School Rotherham      2.106                1               1                0.474834               0.474834                            1.308759
+ high_greave_infant_school_4  High Greave Infant School Rotherham      2.109                1               1                0.474158               0.474158                            1.306897
+
+
+--- Borough: Sheffield ---
+                                     route_id                                 school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                          athelstan_primary_1                           Athelstan Primary Sheffield      2.248                1               2                0.444840               0.889680                            1.226088
+                             astrea_academy_2                              Astrea Academy Sheffield      1.513                1               1                0.660939               0.660939                            1.821710
+                    tapton_secondary_school_5                     Tapton Secondary School Sheffield      1.533                1               1                0.652316               0.652316                            1.797943
+              fir_vale_school_academy_trust_7               Fir Vale School Academy Trust Sheffield      1.533                1               1                0.652316               0.652316                            1.797943
+watercliffe_meadow_community_primary_school_1 Watercliffe Meadow Community Primary School Sheffield      1.559                1               1                0.641437               0.641437                            1.767958
+               lower_meadow_primary_academy_0                Lower Meadow Primary Academy Sheffield      1.647                1               1                0.607165               0.607165                            1.673495
+   southey_green_primary_school_&_nurseries_5    Southey Green Primary School & Nurseries Sheffield      1.656                1               1                0.603865               0.603865                            1.664400
+              fir_vale_school_academy_trust_6               Fir Vale School Academy Trust Sheffield      1.662                1               1                0.601685               0.601685                            1.658392
+                  sheffield_springs_academy_3                   Sheffield Springs Academy Sheffield      1.682                1               1                0.594530               0.594530                            1.638672
+   southey_green_primary_school_&_nurseries_0    Southey Green Primary School & Nurseries Sheffield      1.682                1               1                0.594530               0.594530                            1.638672
+
+
+================================================================================
+🏷️  RISK LEVEL: MINIMAL RISK
+================================================================================
+
+
+--- Borough: Barnsley ---
+                         route_id                    school_name  borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+     cherry_dale_primary_school_2     Cherry Dale Primary School Barnsley      5.901                2               3                0.338926               0.508388                            0.934163
+springwell_alternative_academy_17 Springwell Alternative Academy Barnsley      7.376                3               3                0.406725               0.406725                            1.121033
+       outwood_academy_carlton_13        Outwood Academy Carlton Barnsley      5.136                2               2                0.389408               0.389408                            1.073305
+               greenacre_school_7               Greenacre School Barnsley      7.755                3               3                0.386847               0.386847                            1.066246
+     greenacre_school_kingstone_7     Greenacre School Kingstone Barnsley      7.755                3               3                0.386847               0.386847                            1.066246
+         astrea_academy_dearne_12          Astrea Academy Dearne Barnsley      5.217                2               2                0.383362               0.383362                            1.056640
+         astrea_academy_dearne_13          Astrea Academy Dearne Barnsley      5.271                2               2                0.379435               0.379435                            1.045815
+       milefield_primary_school_2       Milefield Primary School Barnsley      5.298                1               2                0.188750               0.377501                            0.520243
+               barnsley_college_2               Barnsley College Barnsley      5.349                2               2                0.373902               0.373902                            1.030565
+    springwell_special_academy_10     Springwell Special Academy Barnsley      5.381                2               2                0.371678               0.371678                            1.024437
+
+
+--- Borough: Doncaster ---
+                                          route_id                                     school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                       astrea_academy_woodfields_2                       Astrea Academy Woodfields Doncaster      5.165                1               3                0.193611               0.580833                            0.533639
+                       astrea_academy_woodfields_5                       Astrea Academy Woodfields Doncaster      5.315                1               3                0.188147               0.564440                            0.518579
+                       astrea_academy_woodfields_4                       Astrea Academy Woodfields Doncaster      5.348                1               3                0.186986               0.560957                            0.515379
+                       astrea_academy_woodfields_3                       Astrea Academy Woodfields Doncaster      5.587                1               3                0.178987               0.536961                            0.493332
+                             campsmount_academy_13                              Campsmount Academy Doncaster      5.642                2               3                0.354484               0.531726                            0.977046
+                             don_valley_academy_12                              Don Valley Academy Doncaster      5.643                2               3                0.354421               0.531632                            0.976873
+                             don_valley_academy_11                              Don Valley Academy Doncaster      5.701                2               3                0.350816               0.526223                            0.966934
+                hall_cross_academy_lower_school_12                 Hall Cross Academy Lower School Doncaster      5.764                2               3                0.346981               0.520472                            0.956366
+the_mcauley_catholic_high_school_-_lower_school_15 The Mcauley Catholic High School - Lower School Doncaster      5.774                2               3                0.346380               0.519570                            0.954710
+                       astrea_academy_woodfields_6                       Astrea Academy Woodfields Doncaster      5.811                1               3                0.172087               0.516262                            0.474315
+
+
+--- Borough: Rotherham ---
+                                        route_id                                    school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+         wickersley_school_and_sports_college_21           Wickersley School And Sports College Rotherham      5.004                1               2                0.199840               0.399680                            0.550809
+                               hilltop_school_12                                 Hilltop School Rotherham      5.085                2               2                0.393314               0.393314                            1.084070
+aston_all_saints_c_of_e_(aided)_primary_school_4 Aston All Saints C Of E (Aided) Primary School Rotherham      5.094                2               2                0.392619               0.392619                            1.082154
+                     clifton_community_school_14                       Clifton Community School Rotherham      7.813                3               3                0.383975               0.383975                            1.058331
+         saint_bernard's_catholic_high_school_19           Saint Bernard S Catholic High School Rotherham      5.462                2               2                0.366166               0.366166                            1.009244
+                             wales_high_school_8                              Wales High School Rotherham      5.510                2               2                0.362976               0.362976                            1.000453
+                            wingfield_academy_12                              Wingfield Academy Rotherham      5.527                2               2                0.361860               0.361860                            0.997375
+          wickersley_school_and_sports_college_0           Wickersley School And Sports College Rotherham      5.569                2               2                0.359131               0.359131                            0.989853
+                                 abbey_school_10                                   Abbey School Rotherham      5.585                2               2                0.358102               0.358102                            0.987018
+         saint_bernard's_catholic_high_school_17           Saint Bernard S Catholic High School Rotherham      5.599                2               2                0.357207               0.357207                            0.984550
+
+
+--- Borough: Sheffield ---
+                         route_id                    school_name   borough  length_km  collision_count  casualty_count  collision_count_per_km  casualty_count_per_km  poisson_risk_ratio_collision_count
+                    silverdale_18                     Silverdale Sheffield      5.220                2               2                0.383142               0.383142                            1.056033
+                 mercia_school_13                  Mercia School Sheffield      5.747                2               2                0.348008               0.348008                            0.959195
+       tapton_secondary_school_11        Tapton Secondary School Sheffield      8.720                3               3                0.344037               0.344037                            0.948250
+                 mercia_school_37                  Mercia School Sheffield      5.999                2               2                0.333389               0.333389                            0.918902
+                 mercia_school_14                  Mercia School Sheffield      6.821                2               2                0.293212               0.293212                            0.808165
+       tapton_secondary_school_12        Tapton Secondary School Sheffield     10.311                3               3                0.290951               0.290951                            0.801934
+    hinde_house_2-16_secondary_14     Hinde House 2-16 Secondary Sheffield      6.875                2               2                0.290909               0.290909                            0.801817
+king_edward_vii_-_lower_school_22 King Edward Vii - Lower School Sheffield      7.423                2               2                0.269433               0.269433                            0.742623
+king_edward_vii_-_lower_school_16 King Edward Vii - Lower School Sheffield      8.459                2               2                0.236435               0.236435                            0.651672
+         sheffield_park_academy_6         Sheffield Park Academy Sheffield      4.547                1               1                0.219925               0.219925                            0.606168
+
